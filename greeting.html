@@ -127,11 +127,11 @@ else{
 }
 hrs = today.getHours();
 if (hrs < 12)
-        greet = 'Good Morning  ';
+        greet = 'Good Morning  Sara-Ann';
     else if (hrs >= 12 && hrs <= 17)
-        greet = 'Good Afternoon ';
+        greet = 'Good Afternoon Sara-Ann';
     else if (hrs >= 17 && hrs <= 24)
-        greet = 'Good Evening  ';
+        greet = 'Good Evening  Sara-Ann';
 // console.log(today.toLocaleTimeString());
 document.getElementById('greet').innerHTML = greet;
 document.getElementById('hour').innerHTML = hour;
@@ -140,12 +140,13 @@ document.getElementById('sec').innerHTML = seconds;
 }
 
 function twelveHour(hour) {
-if (hrs < 12)
-        greet = 'Good Morning  Sara-Ann';
-    else if (hrs >= 12 && hrs <= 17)
-        greet = 'Good Afternoon Sara-Ann';
-    else if (hrs >= 17 && hrs <= 24)
-        greet = 'Good Evening  Sara-Ann';
+if (hour > 12) {
+    return hour -= 12 
+} else if (hour === 0) {
+    return hour = 12;
+} else {
+    return hour
+}
 }
   
 // adds zero infront of single digit number
