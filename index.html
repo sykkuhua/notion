@@ -36,7 +36,7 @@
 		}
 
 		.navMenu a {
-			color: #cccccc;
+			color: #4994AF;
 			text-decoration: none;
 			text-transform: uppercase;
 			display: inline-block;
@@ -44,17 +44,17 @@
 		}
 
 		.background {
-			background-color: #191919;
+			background-color: #48505b;
 		}
 
 		.border {
-			border: 3px solid #48505b;
+			border: 3px solid #DCC9FF;
 
 		}
 
 		.navMenu a:hover {
 
-			color: #cb4b44;
+			color: #9EDEF7;
 		}
 	</style>
 </head>
@@ -62,9 +62,9 @@
 <body>
 
 	<nav class="navMenu  border background">
-		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house" style="color: #4994af;"></i> School</a>
-		<a id="greeting" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-handshake-simple" style="color: #4994af;"></i> Inbox</a>
-		<a id="polynav" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-school" style="color: #4994af;"></i> Planner</a>
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house" style="color: #4994af;"></i> home</a>
+		<a id="greeting" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-handshake-simple" style="color: #4994af;"></i> greeting</a>
+		<a id="polynav" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-school" style="color: #4994af;"></i> poly</a>
 
 
 	</nav>
@@ -72,7 +72,7 @@
 
 	<script>
 
-		let direction = "vertical";
+		let direction = "horizontal";
 		if (direction === "vertical") {
 			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
 		}
