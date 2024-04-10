@@ -64,7 +64,8 @@
 	<nav class="navMenu  border background">
 		<a id="school" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-school" style="color: #cd4945;"></i> School</a>
 		<a id="inbox" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-envelope" style="color: #cd4945;"></i> Inbox</a>
-		<a id="week" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar" style="color: #cd4945;"></i> Planner</a>
+		<a id="teams" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-users" style="color: #cd4945;"></i> Teams</a>
+        <a id="week" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar" style="color: #cd4945;"></i> Planner</a>
 		<a id="course" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-graduation-cap" style="color: #cd4945;"></i> Course</a>
 		<a id="fop" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-user" style="color: #cd4945;"></i> FOP</a>
         <a id="madpack" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-box-open" style="color: #cd4945;"></i> MADPack</a>
@@ -91,7 +92,9 @@
 			if (id == 'school')
 				window.open("https://www.sp.edu.sg", '_blank').focus();
 			else if (id == "inbox")
-				window.open("https://mail.google.com/mail/u/1/#inbox", '_blank').focus();
+				window.open("https://outlook.office365.com/mail/", '_blank').focus();
+			else if (id == "teams")
+				window.open("https://teams.microsoft.com/v2/", '_blank').focus();
 			else if (id == "week")
 				window.open("https://calendar.google.com/calendar/u/0/r", '_blank').focus();
 			else if (id == "course")
