@@ -62,13 +62,13 @@
 <body>
 
 	<nav class="navMenu  border background">
-	<a id="school" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-school" style="color: #cd4945;"></i> School</a>
-	<a id="inbox" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-envelope" style="color: #cd4945;"></i> Inbox</a>
-	<a id="teams" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-users" style="color: #cd4945;"></i> Teams</a>
+		<a id="school" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-school" style="color: #cd4945;"></i> School</a>
+		<a id="inbox" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-envelope" style="color: #cd4945;"></i> Inbox</a>
+		<a id="teams" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-users" style="color: #cd4945;"></i> Teams</a>
         <a id="week" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar" style="color: #cd4945;"></i> Planner</a>
-	<a id="course" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-graduation-cap" style="color: #cd4945;"></i> Course</a>
-	<a id="brightspace" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-user" style="color: #cd4945;"></i> Brightspace</a>
-        <a id="pc" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-laptop" style="color: #cd4945;"></i> PC</a>
+		<a id="course" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-graduation-cap" style="color: #cd4945;"></i> Course</a>
+		<a id="brightspace" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-user" style="color: #cd4945;"></i> Brightspace</a>
+        <a id="elec" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book" style="color: #cd4945;"></i> Elective</a>
         <a id="software" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-circle-down" style="color: #cd4945;"></i> Software</a>
         <a id="pw" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-lock" style="color: #cd4945;"></i> </a>
 
@@ -88,23 +88,23 @@
 
 		function navigate(id) {
 
-		if (id == 'school')
+			if (id == 'school')
 				window.open("https://www.sp.edu.sg", '_blank').focus();
-		else if (id == "inbox")
+			else if (id == "inbox")
 				window.open("https://outlook.office365.com/mail/", '_blank').focus();
-		else if (id == "teams")
+			else if (id == "teams")
 				window.open("https://teams.microsoft.com/v2/", '_blank').focus();
-		else if (id == "week")
+			else if (id == "week")
 				window.open("https://calendar.google.com/calendar/u/0/r", '_blank').focus();
-		else if (id == "course")
+			else if (id == "course")
 				window.open("https://www.sp.edu.sg/mad", '_blank').focus();
-            	else if (id == "brightspace")
+            else if (id == "brightspace")
 				window.open("https://splms.polite.edu.sg/d2l/home", '_blank').focus();
-            	else if (id == "pc")
-				window.open("https://www.sp.edu.sg/sp/student-services/it-services/it-support/specifications-promotions", '_blank').focus();
-		else if (id == "software")
+            else if (id == "elec")
+				window.open("https://www.sp.edu.sg/sp/education/elective-modules/elective-modules-listing?cat=all&sch=all", '_blank').focus();
+			else if (id == "software")
 				window.open("https://spapps2.sp.edu.sg/sites/faq/Resources/applicationpages/questions.aspx?search=true&key=mad", '_blank').focus();
-           	 else if (id == "pw")
+            else if (id == "pw")
 				window.open("https://www.notion.so/0eea4fbfd4fa4caebb4feff7c3b2b79d?v=56ab71d8aa844ec28b9762b0aff9f90b", '_blank').focus();
 			
 
